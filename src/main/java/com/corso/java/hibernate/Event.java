@@ -40,10 +40,10 @@ public class Event {
     }
 
     public String getDescription() {
-        return descrition;
+        return description;
     }
 
     public void setDescription(String descrition) {
-        this.descrition = descrition;
+        this.description = descrition;
     }
 }
