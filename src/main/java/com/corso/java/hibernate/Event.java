@@ -2,18 +2,20 @@ package com.corso.java.hibernate;
 
 import java.util.Date;
 
+
 public class Event {
     private Long id;
     private Date date;
     private String title, description;
 
-    public Event(String title, String description, Date date){
+    public Event(String title, String description, Date date) {
         this.title = title;
         this.description = description;
         this.date = date;
     }
 
-    public Event(){}
+    public Event() {
+    }
 
     public Long getId() {
         return id;

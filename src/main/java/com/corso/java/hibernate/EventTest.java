@@ -39,8 +39,8 @@ public class EventTest {
 
         session = sessionFactory.openSession();
         session.beginTransaction();
-        List<Event> result = session.createQuery("from Event").list();
-        for (Event event : (List<Event>) result) {
+        List<Event> result = session.createQuery("select e from Event e", Event.class).list();
+        for (Event event : result) {
             System.out.println("Event (" + event.getDate() + ") : " + event.getTitle() + "  " + event.getDescription());
         }
         session.getTransaction().commit();

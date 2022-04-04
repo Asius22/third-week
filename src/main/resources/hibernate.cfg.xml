@@ -8,13 +8,13 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/jdbc</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">250977cc</property>
+        <property name="connection.password">123456sette</property>
         <property name="connection.pool_size">1</property>
-        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
         <property name="show_sql">true</property>
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
-        <mapping resource="event.hbm.xml"/>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <mapping resource="event.xml"/>
     </session-factory>
 </hibernate-configuration>

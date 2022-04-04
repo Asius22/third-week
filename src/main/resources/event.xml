@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping
         package="com.corso.java"
         xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
-    <class name="com.corso.java.hibernate.Event" table="T_EVENT">
+    <class name="com.corso.java.hibernate.Event" table="jdbc.T_EVENT" >
         <id name="id" column="id_event">
             <generator class="increment"/>
         </id>
