@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping
+        package="com.corso.java"
+        xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.corso.java.hibernate.Event" table="T_EVENT">
+        <id name="id" column="id_event">
+            <generator class="increment"/>
+        </id>
+        <property name="date" type="timestamp" column="data_evento"/>
+        <property name="title"/>
+        <property name="description"/>
+    </class>
+</hibernate-mapping>
